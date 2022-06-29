@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
-import MdiGithub from "~icons/mdi/github";
-import MdiInstagram from "~icons/mdi/instagram";
+// import MdiGithub from "~icons/mdi/github";
+// import MdiInstagram from "~icons/mdi/instagram";
 import MdiYouTube from "~icons/mdi/youtube";
 import MdiFacebook from "~icons/mdi/facebook";
 import Typing from "@components/Typing.vue";
