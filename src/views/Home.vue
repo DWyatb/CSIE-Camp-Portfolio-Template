@@ -2,6 +2,8 @@
 import { ref } from "vue";
 import MdiGithub from "~icons/mdi/github";
 import MdiInstagram from "~icons/mdi/instagram";
+import MdiYouTube from "~icons/mdi/youtube";
+import MdiFacebook from "~icons/mdi/facebook";
 import Typing from "@components/Typing.vue";
 
 const step = ref(0);
@@ -11,28 +13,28 @@ const step = ref(0);
         <Typing
             v-if="step >= 0"
             @done="step++"
-            text="My Portfolio"
+            text="HAHA Portfolio"
             class="mb-2 block text-2xl sm:text-3xl lg:text-4xl"
         />
-        <Typing v-if="step >= 1" @done="step++" text="Hello!" :speed="60" />
+        <Typing v-if="step >= 1" @done="step++" text="Hello hello!" :speed="60" />
         <a
             v-if="step >= 2"
-            class="mt-8 flex items-center text-lg text-gray-500 transition-all hover:text-gray-700"
-            href="https://github.com/"
+            class="mt-8 flex items-center text-lg text-gray-500 transition-all hover:text-orange-700"
+            href="https://www.youtube.com/watch?v=Eeav8s1v-_Q"
             target="_blank"
         >
-            <MdiGithub class="mr-1 inline-block" />
-            <Typing v-if="step >= 2" @done="step++" text="GitHub" :speed="60" />
+            <MdiYouTube class="mr-1 inline-block text-red-500" />
+            <Typing v-if="step >= 2" @done="step++" text="YouTube" :speed="60" />
         </a>
         <a
             v-if="step >= 3"
             @done="step++"
-            class="mt-4 flex items-center text-lg text-gray-500 transition-all hover:text-gray-700"
-            href="https://instagram.com/"
+            class="mt-4 flex items-center text-lg text-gray-500 transition-all hover:text-blue-500"
+            href="https://zh-tw.facebook.com/proware.tw/"
             target="_blank"
         >
-            <MdiInstagram class="mr-1 inline-block" />
-            <Typing v-if="step >= 3" @done="step++" text="Instagram" :speed="60" />
+            <MdiFacebook class="mr-1 inline-block text-blue-500" />
+            <Typing v-if="step >= 3" @done="step++" text="FaceBook" :speed="60" />
         </a>
     </div>
 </template>
